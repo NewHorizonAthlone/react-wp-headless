@@ -1,1 +1,1 @@
-# pratice-template
+# Practice Template
