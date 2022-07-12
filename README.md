@@ -1,1 +1,1 @@
-# Practice Template
+# Practice WP Template
