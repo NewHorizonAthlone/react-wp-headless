@@ -10,4 +10,5 @@ What we will be using to build this theme:
 
 ## Git Flow
 
-
+### Compile
+`npm run compile:sass`
