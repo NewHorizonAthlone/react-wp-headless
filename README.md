@@ -9,5 +9,9 @@ What we will be using to build this theme:
 - CSS
 
 ## Git Flow
+- Main 
+- Develop
+- Feature
+
 
 
