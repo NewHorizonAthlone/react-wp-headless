@@ -8,6 +8,7 @@ What we will be using:
 ## However lets start with a basic website
 - HTML
 - CSS
+- JS ES6 
 - GitHub Pages
 
 ## Git Flow
