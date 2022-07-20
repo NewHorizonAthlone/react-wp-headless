@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // defines what 1rem is
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  color: red;
+}
