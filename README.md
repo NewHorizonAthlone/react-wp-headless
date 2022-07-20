@@ -19,9 +19,9 @@ main - develop - feature - pull request - squash and merge
 - `npm run compile:sass`
 
 ### Useful links
-[NodeSource using-npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
-[CodeCademy learn-sass](https://www.codecademy.com/learn/learn-sass)
-[GitHub Pages](https://pages.github.com/)
-[StackOverflow](https://stackoverflow.com/a/11947816)
-[https://developer.wordpress.org/rest-api/reference/posts/](https://developer.wordpress.org/rest-api/reference/posts/)
-[https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+- [NodeSource using-npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
+- [CodeCademy learn-sass](https://www.codecademy.com/learn/learn-sass)
+- [GitHub Pages](https://pages.github.com/)
+- [StackOverflow](https://stackoverflow.com/a/11947816)
+- [https://developer.wordpress.org/rest-api/reference/posts/](https://developer.wordpress.org/rest-api/reference/posts/)
+- [https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
