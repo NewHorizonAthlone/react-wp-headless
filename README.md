@@ -12,7 +12,11 @@ What we will be using:
 - GitHub Pages
 
 ## Git Flow
-main - develop - feature - pull request - squash and merge
+- Main 
+- Develop
+- Feature
+- pull request 
+-- squash and merge
 
 ### Set up
 - Node v16.0.0
