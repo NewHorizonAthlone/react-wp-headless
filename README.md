@@ -1,5 +1,5 @@
 # New Horizon Web App / React WP Template / headless WP
-This repo will be used to help train staff on how to it's built and then how to update our React WP template in production using learnt best pratices.
+This repo will be used to help train devs on how our React WP template (production) is built and then how to update utilising learnt best pratices.
 
 What we will be using:
 - [Node / NPM](https://nodejs.org/en/download/)
