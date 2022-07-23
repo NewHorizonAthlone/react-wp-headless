@@ -1,4 +1,6 @@
-# Practice Web App / WP Template
+# New Horizon Web App / React WP Template / headless WP
+This repo will be used to help train staff on how to it's built and then how to update our React WP template in production using learnt best pratices.
+
 What we will be using:
 - [Node / NPM](https://nodejs.org/en/download/)
 - [SASS](https://sass-lang.com/)
@@ -26,8 +28,6 @@ What we will be using:
 - Node v16.0.0
 - `npm run compile:sass`
 
-
-
 ### Useful links
 - [NodeSource using-npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
 - [CodeCademy learn-sass](https://www.codecademy.com/learn/learn-sass)
@@ -35,4 +35,4 @@ What we will be using:
 - [StackOverflow](https://stackoverflow.com/a/11947816)
 - [https://developer.wordpress.org/rest-api/reference/posts/](https://developer.wordpress.org/rest-api/reference/posts/)
 - [https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-- https://blog.hubspot.com/website/headless-cms
+- [hubspot website headless CMS](https://blog.hubspot.com/website/headless-cms)
