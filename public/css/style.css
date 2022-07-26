@@ -17,7 +17,54 @@ body {
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
+<<<<<<< Updated upstream
   color: red;
+=======
+  color: orange;
+}
+
+.container {
+  width: 680px;
+  display: block;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+}
+header element.style {
+  position: relative;
+  min-height: 100%;
+  top: 0px;
+}
+header body.bb-custom-typo {
+  font-family: "SF UI Text", sans-serif;
+}
+header body {
+  top: 0 !important;
+}
+header body, header body #main-wrap, header .formatted-content {
+  background-color: #ffffff;
+}
+header body, header input, header textarea, header select, header .forgetme:hover, header .joinbutton:hover, header .siginbutton:hover, header .post-grid .entry-content, header .comment-text, header .bb-message-box .message-content, header #bs-message-threads p.thread-subject, header .bb-document-theater .bb-media-section h3, header .widget.widget_display_stats dt, header blockquote, header .bb-profile-meta span span, header body.register .registration-popup.bb-modal {
+  color: #00062b;
+}
+header body, header html {
+  min-height: 100%;
+}
+header *, header :after, header :before {
+  box-sizing: inherit;
+}
+header *, header :after, header :before {
+  box-sizing: inherit;
+}
+header *, header :after, header :before {
+  box-sizing: inherit;
+}
+
+footer a:link {
+  text-decoration: none;
+>>>>>>> Stashed changes
 }
 
 /*# sourceMappingURL=style.css.map */
