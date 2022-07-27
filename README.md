@@ -37,6 +37,8 @@ What we will be using:
 - [https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [hubspot website headless CMS](https://blog.hubspot.com/website/headless-cms)
 
+- [javascript.info](https://javascript.info/)
+
 ### Useful links AWS
 * https://docs.bitnami.com/aws/faq/get-started/access-phpmyadmin/
 * https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-connecting-to-linux-unix-instance-using-sftp
