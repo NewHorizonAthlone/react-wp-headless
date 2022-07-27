@@ -28,18 +28,18 @@ What we will be using:
 - Node v16.0.0
 - `npm run compile:sass`
 
-### Useful links
+### JS Useful links
 - [NodeSource using-npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
 - [CodeCademy learn-sass](https://www.codecademy.com/learn/learn-sass)
 - [GitHub Pages](https://pages.github.com/)
 - [StackOverflow](https://stackoverflow.com/a/11947816)
 - [https://developer.wordpress.org/rest-api/reference/posts/](https://developer.wordpress.org/rest-api/reference/posts/)
 - [https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-- [hubspot website headless CMS](https://blog.hubspot.com/website/headless-cms)
-
+- [jamstack headless-cms](https://jamstack.org/headless-cms/)
 - [javascript.info](https://javascript.info/)
+- [JS references/](https://daveceddia.com/javascript-references/)
 
-### Useful links AWS
+### AWS Useful links 
 * https://docs.bitnami.com/aws/faq/get-started/access-phpmyadmin/
 * https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-connecting-to-linux-unix-instance-using-sftp
 * [AWS CodeDeploy CodePipeline deploy Git](https://aws.amazon.com/blogs/compute/using-aws-codedeploy-and-aws-codepipeline-to-deploy-applications-to-amazon-lightsail/)
