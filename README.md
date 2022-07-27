@@ -36,3 +36,9 @@ What we will be using:
 - [https://developer.wordpress.org/rest-api/reference/posts/](https://developer.wordpress.org/rest-api/reference/posts/)
 - [https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [hubspot website headless CMS](https://blog.hubspot.com/website/headless-cms)
+
+### Useful links AWS
+* https://docs.bitnami.com/aws/faq/get-started/access-phpmyadmin/
+* https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-connecting-to-linux-unix-instance-using-sftp
+* [AWS CodeDeploy CodePipeline deploy Git](https://aws.amazon.com/blogs/compute/using-aws-codedeploy-and-aws-codepipeline-to-deploy-applications-to-amazon-lightsail/)
+
