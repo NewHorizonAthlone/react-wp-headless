@@ -44,3 +44,9 @@ What we will be using:
 * https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-connecting-to-linux-unix-instance-using-sftp
 * [AWS CodeDeploy CodePipeline deploy Git](https://aws.amazon.com/blogs/compute/using-aws-codedeploy-and-aws-codepipeline-to-deploy-applications-to-amazon-lightsail/)
 
+### Learning resources
+- [HTML & CSS](https://internetingishard.com/).
+- [ES6 syntax and features](https://www.taniarascia.com/es6-syntax-and-feature-overview/)
+- [array and object spread operators](https://javascript.info/rest-parameters-spread#spread-syntax)
+- [asynchronous JavaScript](https://javascript.info/promise-basics) and making [AJAX requests](https://javascript.info/fetch)
+
