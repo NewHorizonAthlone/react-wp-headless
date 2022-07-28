@@ -21,8 +21,7 @@ What we will be using:
 - Main 
 - Develop
 - Feature
-- pull request 
--- squash and merge
+- pull request : squash and merge
 
 ### Set up
 - Node v16.0.0
