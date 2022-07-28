@@ -49,4 +49,5 @@ What we will be using:
 - [ES6 syntax and features](https://www.taniarascia.com/es6-syntax-and-feature-overview/)
 - [array and object spread operators](https://javascript.info/rest-parameters-spread#spread-syntax)
 - [asynchronous JavaScript](https://javascript.info/promise-basics) and making [AJAX requests](https://javascript.info/fetch)
+- [Restfulapi http status codes](https://restfulapi.net/http-status-codes/)
 
