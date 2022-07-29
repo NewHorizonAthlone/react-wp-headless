@@ -25,6 +25,7 @@ What we will be using:
 -- squash and merge
 
 ### Initial Set up
+- `npm install`
 - Node v16.0.0
 - `npm run compile:sass`
 
