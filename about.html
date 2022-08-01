@@ -16,17 +16,22 @@
             <header class="entry-header">
                 <h1>About New Horizon</h1>
             </header>
-            <section class="content">
-                <ul>
-                    <li>
-                        How is New Horizon organized?
+            <ul> 
+
+
+                <button type="button" class="collapsible">How is New Horizon organized?</button>
+                <div class="content">
+                    <p>
                         Posted by Gerry Callaghan on 2018-02-04
                         We have a pretty standard voluntary organisation structure of chair, secretary and treasurer.
                         These are elected at an AGM each year. We plan on holding a committee meeting once a month to
                         plan and coordinate activities. Each Wednesday we hold a drop-in clinic on the Direct Provision
                         site. This deals with health, education, housing and family support issues. Volunteers tend to
                         create their own roles taking into account their previous skills and experiences. These may not
-                        correspond too well with the official structure but do definitely work.</li>
+                        correspond too well with the official structure but do definitely work.
+                    </p>   
+                </div>
+                       
                     <li>
                         What is New Horizon’s Mission Statement?
                         Posted by Gerry Callaghan on 2018-02-04
@@ -58,6 +63,25 @@
 
     <script src="./script.js"></script>
 
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+        </script>
+
+
+    
 </body>
 
 </html>
