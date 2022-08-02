@@ -16,7 +16,7 @@
             <header class="entry-header">
                 <h1>About New Horizon</h1>
             </header>
-            <ul> 
+            <ul>
 
 
                 <button type="button" class="collapsible">How is New Horizon organized?</button>
@@ -29,36 +29,38 @@
                         site. This deals with health, education, housing and family support issues. Volunteers tend to
                         create their own roles taking into account their previous skills and experiences. These may not
                         correspond too well with the official structure but do definitely work.
-                    </p>   
+                    </p>
                 </div>
-                       
-                    <li>
+                <button type="button" class="collapsible"> What is New Horizon’s Mission Statement?</button>
+                <div class="content">
+                    <p>  
                         What is New Horizon’s Mission Statement?
                         Posted by Gerry Callaghan on 2018-02-04
                         The New Horizon constitution says:
-                    <li>
-                        To Welcome and support people who seek refuge in our midst
-                    </li>
-                    <li>
-                        To Give information and support as necessary
-                    </li>
-                    <li>
-                        To Celebrate the riches the newcomers bring to this society
-                    </li>
-                    </li>
-                    <li>
-                        Who Funds New Horizon?
-                        Posted by Gerry Callaghan 2018-03-04
-                        It is funded by small scale grants from Westmeath Community Development Ltd.
-                        Individual projects are funded from various sources such as the Health Service Executive (HSE)
-                        and St. Stephen’s Green Trust.
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </section>
-        </article>
+                        <li>
+                            To Welcome and support people who seek refuge in our midst
+                        </li>
+                        <li>
+                            To Give information and support as necessary
+                        </li>
+                        <li>
+                            To Celebrate the riches the newcomers bring to this society
+                        </li>
+                     </p>   
+                     </div>
+
+                     <button type="button" class="collapsible"> Who Funds New Horizon?</button>
+                     <div class="content">
+                         <p>    
+                    Posted by Gerry Callaghan 2018-03-04
+                    It is funded by small scale grants from Westmeath Community Development Ltd.
+                    Individual projects are funded from various sources such as the Health Service Executive (HSE)
+                    and St. Stephen’s Green Trust.
+                    </p>
+                </div>
+                
+           
+         
     </main>
 
     <script src="./script.js"></script>
@@ -66,22 +68,22 @@
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
-        
+
         for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            }
-          });
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
         }
-        </script>
+    </script>
 
 
-    
+
 </body>
 
 </html>
