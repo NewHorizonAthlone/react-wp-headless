@@ -4,19 +4,33 @@
 }
 
 .collapsible {
-    background-color: #eee;
-    color: #444;
+    background-color: white;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 20.25px;
+    font-family: sans-serif;
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+    font-size: 20.25px;
+  }
+
+  .active:after {
+    content: "\2212";
   }
 
   .active, .collapsible:hover {
-    background-color: #ccc;
+    background-color: white;
   }
 
   .content {
@@ -25,4 +39,17 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 50px;
+    font-family: sans-serif;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 16px;
+    font-family: sans-serif;
+
   }
