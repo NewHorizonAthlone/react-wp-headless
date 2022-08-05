@@ -44,7 +44,8 @@ p {
   width: 960px;
   margin: 0 auto;
 }
-.about-page .collapsible {
+
+.collapsible {
   background-color: white;
   color: black;
   cursor: pointer;
@@ -56,7 +57,8 @@ p {
   font-size: 20.25px;
   font-family: sans-serif;
 }
-.about-page .collapsible:after {
+
+.collapsible:after {
   content: "+";
   color: black;
   font-weight: bold;
@@ -64,12 +66,19 @@ p {
   margin-left: 5px;
   font-size: 20.25px;
 }
-.about-page .active:after {
+
+.active:after {
   content: "−";
 }
-.about-page .active,
-.about-page .collapsible:hover {
+
+.active,
+.collapsible:hover {
   background-color: white;
+}
+
+.about-people-page {
+  width: 960px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
