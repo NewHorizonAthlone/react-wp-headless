@@ -35,6 +35,7 @@ What we will be using:
 - [array and object spread operators](https://javascript.info/rest-parameters-spread#spread-syntax)
 - [asynchronous JavaScript](https://javascript.info/promise-basics) and making [AJAX requests](https://javascript.info/fetch)
 - [RESTful API http status codes](https://restfulapi.net/http-status-codes/)
+- [MDN Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 
 ### JS Useful links
 - [NodeSource using-npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
