@@ -1,0 +1,35 @@
+.about-page {
+  width: 960px;
+  margin: 0 auto;
+
+  .collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20.25px;
+    font-family: sans-serif;
+  }
+
+  .collapsible:after {
+    content: "\002B";
+    color: black;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+    font-size: 20.25px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: white;
+  }
+}
