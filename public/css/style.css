@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -17,7 +18,58 @@ body {
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 50px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.about-page {
+  width: 960px;
+  margin: 0 auto;
+}
+.about-page .collapsible {
+  background-color: white;
   color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20.25px;
+  font-family: sans-serif;
+}
+.about-page .collapsible:after {
+  content: "+";
+  color: black;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+  font-size: 20.25px;
+}
+.about-page .active:after {
+  content: "−";
+}
+.about-page .active,
+.about-page .collapsible:hover {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,8 @@
 .about-page {
-    width:960px;
-    margin:0 auto;
-}
+  width: 960px;
+  margin: 0 auto;
 
-.collapsible {
+  .collapsible {
     background-color: white;
     color: black;
     cursor: pointer;
@@ -17,7 +16,7 @@
   }
 
   .collapsible:after {
-    content: '\002B';
+    content: "\002B";
     color: black;
     font-weight: bold;
     float: left;
@@ -29,27 +28,8 @@
     content: "\2212";
   }
 
-  .active, .collapsible:hover {
+  .active,
+  .collapsible:hover {
     background-color: white;
   }
-
-  .content {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-
-  h1 {
-    font-weight: 400;
-    font-size: 50px;
-    font-family: sans-serif;
-  }
-
-  p {
-    font-weight: normal;
-    font-size: 16px;
-    font-family: sans-serif;
-
-  }
+}
