@@ -11,3 +11,19 @@ reportPerimeter(square1.length, reportList);
 
 // Use the default
 let square2 = randomSquare(myCanvas.ctx);
+
+// faq
+let coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
