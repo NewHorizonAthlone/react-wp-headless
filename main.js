@@ -1,8 +1,7 @@
 // modules
-
 import { fetchPosts } from "./modules/firstThreePosts.mjs";
 
-fetchPosts();
+fetchPosts(3);
 
 // faq
 let coll = document.getElementsByClassName("collapsible");
