@@ -5,13 +5,20 @@ async function fetchPosts() {
     const response = await fetch(url)
       .then((response) => response.json())
       .then((posts) => {
-        console.log(posts);
+        // console.log(posts);
         const firstThreePosts = posts.slice(0, 3);
-        return firstThreePosts.map((post) => {
-          let card = document.querySelector("#card");
-          card.innerHTML = post.title.rendered;
-          card.innerHTML = post.content.rendered;
+
+        let html = "";
+        firstThreePosts.forEach((post) => {
+          let htmlSegment = `
+                <div class="post">
+                    <p>${post.title.rendered}</p>
+                </div>`;
+          html += htmlSegment;
         });
+
+        let container = document.querySelector("#cards");
+        container.innerHTML = html;
       });
   } catch (e) {
     console.log("Error during fetch: " + e);
