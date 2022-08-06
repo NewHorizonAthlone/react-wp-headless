@@ -1,11 +1,36 @@
-import { create, createReportList } from './modules/canvas.mjs';
-import { name, draw, reportArea, reportPerimeter } from './modules/square.mjs';
-import randomSquare from './modules/square.mjs';
+// fetch WP posts with JS
+async function fetchPosts() {
+  const url = "https://newhorizonathlone.ngo/wp-json/wp/v2/posts";
+  try {
+    const response = await fetch(url)
+      .then((response) => response.json())
+      .then((posts) => {
+        console.log(posts);
+        const firstThreePosts = posts.slice(0, 3);
+        return firstThreePosts.map((post) => {
+          let card = document.querySelector("#card");
+          card.innerHTML = post.title.rendered;
+          card.innerHTML = post.content.rendered;
+        });
+      });
+  } catch (e) {
+    console.log("Error during fetch: " + e);
+    return [];
+  }
+}
 
-let myCanvas = create('myCanvas', document.body, 480, 320);
+fetchPosts();
+
+// modules
+
+import { create, createReportList } from "./modules/canvas.mjs";
+import { name, draw, reportArea, reportPerimeter } from "./modules/square.mjs";
+import randomSquare from "./modules/square.mjs";
+
+let myCanvas = create("myCanvas", document.body, 480, 320);
 let reportList = createReportList(myCanvas.id);
 
-let square1 = draw(myCanvas.ctx, 50, 50, 100, 'blue');
+let square1 = draw(myCanvas.ctx, 50, 50, 100, "blue");
 reportArea(square1.length, reportList);
 reportPerimeter(square1.length, reportList);
 
