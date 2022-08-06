@@ -1,0 +1,24 @@
+.section-posts {
+  height: 100%;
+  padding: 12rem 0 10rem;
+}
+
+@media (min-width: 600px) {
+  .section-posts {
+    transform: skewY(-15deg);
+
+    & > * {
+      transform: skewY(15deg);
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .section-posts {
+    transform: skewY(-6deg);
+
+    & > * {
+      transform: skewY(6deg);
+    }
+  }
+}
