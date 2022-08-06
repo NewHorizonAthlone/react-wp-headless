@@ -1,48 +1,8 @@
-// fetch WP posts with JS
-async function fetchPosts() {
-  const url = "https://newhorizonathlone.ngo/wp-json/wp/v2/posts";
-  try {
-    const response = await fetch(url)
-      .then((response) => response.json())
-      .then((posts) => {
-        // console.log(posts);
-        const firstThreePosts = posts.slice(0, 3);
-
-        let html = "";
-        firstThreePosts.forEach((post) => {
-          let htmlSegment = `
-                <div class="post">
-                    <p>${post.title.rendered}</p>
-                </div>`;
-          html += htmlSegment;
-        });
-
-        let container = document.querySelector("#cards");
-        container.innerHTML = html;
-      });
-  } catch (e) {
-    console.log("Error during fetch: " + e);
-    return [];
-  }
-}
-
-fetchPosts();
-
 // modules
 
-import { create, createReportList } from "./modules/canvas.mjs";
-import { name, draw, reportArea, reportPerimeter } from "./modules/square.mjs";
-import randomSquare from "./modules/square.mjs";
+import { fetchPosts } from "./modules/firstThreePosts.mjs";
 
-let myCanvas = create("myCanvas", document.body, 480, 320);
-let reportList = createReportList(myCanvas.id);
-
-let square1 = draw(myCanvas.ctx, 50, 50, 100, "blue");
-reportArea(square1.length, reportList);
-reportPerimeter(square1.length, reportList);
-
-// Use the default
-let square2 = randomSquare(myCanvas.ctx);
+fetchPosts();
 
 // faq
 let coll = document.getElementsByClassName("collapsible");
