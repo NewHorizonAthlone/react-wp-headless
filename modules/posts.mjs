@@ -1,12 +1,11 @@
 // fetch WP posts with JS
-async function fetchPosts() {
+async function fetchPosts(numberOfPost) {
   const url = "https://newhorizonathlone.ngo/wp-json/wp/v2/posts?_embed";
   try {
     const response = await fetch(url)
       .then((response) => response.json())
       .then((posts) => {
-        const firstThreePosts = posts.slice(0, 3);
-        console.log(firstThreePosts);
+        const firstThreePosts = posts.slice(0, numberOfPost);
         let html = "";
         firstThreePosts.forEach((post) => {
           let htmlSegment = `

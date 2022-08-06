@@ -1,8 +1,12 @@
 // modules
+import { renderNav } from "./modules/nav.mjs";
+import { fetchPosts } from "./modules/posts.mjs";
 
-import { fetchPosts } from "./modules/firstThreePosts.mjs";
+renderNav();
 
-fetchPosts();
+// enter number of posts if empty 10
+// will be displayed
+fetchPosts(3);
 
 // faq
 let coll = document.getElementsByClassName("collapsible");
