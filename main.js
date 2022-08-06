@@ -1,6 +1,11 @@
 // modules
-import { fetchPosts } from "./modules/firstThreePosts.mjs";
+import { renderNav } from "./modules/nav.mjs";
+import { fetchPosts } from "./modules/posts.mjs";
 
+renderNav();
+
+// enter number of posts if empty 10
+// will be displayed
 fetchPosts(3);
 
 // faq
