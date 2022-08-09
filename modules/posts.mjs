@@ -1,5 +1,5 @@
 // fetch WP posts with JS
-async function fetchPosts(numberOfPost) {
+async function renderPosts(numberOfPost) {
   const url = "https://newhorizonathlone.ngo/wp-json/wp/v2/posts?_embed";
   try {
     const response = await fetch(url)
@@ -37,4 +37,4 @@ async function fetchPosts(numberOfPost) {
   }
 }
 
-export { fetchPosts };
+export default renderPosts;

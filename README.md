@@ -29,7 +29,10 @@ What we will be using:
 - Node v16.0.0
 - `npm run compile:sass`
 
-### Learning resources
+## Learning resources
+### React
+- [React Router v6 getting started](https://reactrouter.com/docs/en/v6/getting-started/overview)
+### Web Dev General
 - [HTML & CSS](https://internetingishard.com/).
 - [ES6 syntax and features](https://www.taniarascia.com/es6-syntax-and-feature-overview/)
 - [array and object spread operators](https://javascript.info/rest-parameters-spread#spread-syntax)
@@ -53,4 +56,5 @@ What we will be using:
 * https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-connecting-to-linux-unix-instance-using-sftp
 * [AWS CodeDeploy CodePipeline deploy Git](https://aws.amazon.com/blogs/compute/using-aws-codedeploy-and-aws-codepipeline-to-deploy-applications-to-amazon-lightsail/)
 
-
+### VS Code Useful extensions 
+* [GitHub Thunder client support](https://github.com/rangav/thunder-client-support)
