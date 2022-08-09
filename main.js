@@ -1,3 +1,9 @@
+// modules
+import renderPosts from "./modules/posts.mjs";
+
+// components
+import renderNav from "./components/nav.js";
+
 window.onload = function()
 {
     const path = window.location.pathname.split('/')
@@ -5,7 +11,7 @@ window.onload = function()
 
     switch(path[1])
     {
-        case "":
+        case "/":
         {
             loadPage("home");
             break;
@@ -57,13 +63,6 @@ window.onload = function()
         }
     }
 }
-
-// modules
-import renderPosts from "./modules/posts.mjs";
-
-// components
-import renderNav from "./components/nav.js";
-
 // navigation
 renderNav();
 
