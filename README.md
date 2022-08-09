@@ -1,5 +1,5 @@
 # New Horizon React Headless CMS
-This repo will be used to help get developers up and running on how our React WP template (production) is built and then how to update utilizing learnt best practices.
+This repo will be used to help get developers up and running with React and SASS.
 
 What we will be using:
 - [Node / NPM](https://nodejs.org/en/download/)
