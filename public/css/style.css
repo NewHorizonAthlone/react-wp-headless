@@ -169,7 +169,8 @@ ul li {
   width: 960px;
   margin: 0 auto;
 }
-.about-page .collapsible {
+
+.collapsible {
   background-color: white;
   color: black;
   cursor: pointer;
@@ -181,7 +182,8 @@ ul li {
   font-size: 20.25px;
   font-family: sans-serif;
 }
-.about-page .collapsible:after {
+
+.collapsible:after {
   content: "+";
   color: black;
   font-weight: bold;
@@ -189,14 +191,22 @@ ul li {
   margin-left: 5px;
   font-size: 20.25px;
 }
-.about-page .active:after {
+
+.active:after {
   content: "−";
 }
-.about-page .active,
-.about-page .collapsible:hover {
+
+.active,
+.collapsible:hover {
   background-color: white;
 }
 
+/*# <<<<<<< HEAD */
+.about-people-page {
+  width: 960px;
+  margin: 0 auto;
+}
+/*# ======= */
 .btn:link, .btn:visited {
   text-decoration: none;
   padding: 0.4rem 0.8rem;
@@ -275,6 +285,7 @@ ul li {
   100% {
     transform: translateY(0);
   }
+/*# >>>>>>> delevop */
 }
 
 /*# sourceMappingURL=style.css.map */
