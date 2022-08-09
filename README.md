@@ -1,5 +1,5 @@
-# New Horizon React WP Template / Headless CMS
-This repo will be used to help train devs on how our React WP template (production) is built and then how to update utilising learnt best pratices.
+# New Horizon React Headless CMS
+This repo will be used to help get developers up and running on how our React WP template (production) is built and then how to update utilizing learnt best practices.
 
 What we will be using:
 - [Node / NPM](https://nodejs.org/en/download/)
@@ -13,16 +13,10 @@ What we will be using:
 - JS ES6 
 - GitHub Pages
 
-## WP endpoints
-- https://newhorizonathlone.ngo/wp-json/wp/v2/pages
-- https://newhorizonathlone.ngo/wp-json/wp/v2/posts
-
 ## Git Flow
 - Main 
-- Develop
-- Feature
-- pull request 
--- squash and merge
+- Develop - Feature
+- Develop - pull request -- squash and merge
 
 ### Initial Set up
 - `npm install`
@@ -55,6 +49,3 @@ What we will be using:
 * https://docs.bitnami.com/aws/faq/get-started/access-phpmyadmin/
 * https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-connecting-to-linux-unix-instance-using-sftp
 * [AWS CodeDeploy CodePipeline deploy Git](https://aws.amazon.com/blogs/compute/using-aws-codedeploy-and-aws-codepipeline-to-deploy-applications-to-amazon-lightsail/)
-
-### VS Code Useful extensions 
-* [GitHub Thunder client support](https://github.com/rangav/thunder-client-support)
