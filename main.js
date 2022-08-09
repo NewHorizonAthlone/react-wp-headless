@@ -1,6 +1,7 @@
 window.onload = function()
 {
-    const path = window.location.pathname.split("/");
+    const path = window.location.pathname.split('/')
+    + window.location.pathname.replace('/teach-react-wp-template', '');
 
     switch(path[1])
     {
