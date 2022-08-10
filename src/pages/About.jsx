@@ -5,10 +5,10 @@ const HomePage = () => {
     <>
       <div className="App">
         <header>
-          <h1>A React Redux boilerplate</h1>
+          <h1>New Horizon Headless CMS</h1>
         </header>
         <main>
-          <h2>This will be my boilerplate for React projects</h2>
+          <h2>A headless CMS</h2>
           <p></p>
         </main>
       </div>

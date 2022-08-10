@@ -19,6 +19,9 @@ What we will be using:
 - [asynchronous JavaScript](https://javascript.info/promise-basics) and making [AJAX requests](https://javascript.info/fetch)
 - [RESTful API http status codes](https://restfulapi.net/http-status-codes/)
 - [MDN Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+- [Dave Ceddia JavaScript references](https://daveceddia.com/javascript-references/)
+- [Atende sign group array map filter and reduce JS](https://atendesigngroup.com/articles/array-map-filter-and-reduce-js)
 
 ### React
 - [React Router v6 getting started](https://reactrouter.com/docs/en/v6/getting-started/overview
+= [Dave Ceddia react redux immutability guide](https://daveceddia.com/react-redux-immutability-guide/)
