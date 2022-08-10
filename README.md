@@ -1,6 +1,8 @@
 # New Horizon React Headless CMS
 Building a Headless CMS to help get developers up and running with React Redux and SASS.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f05d9c48-6287-4c27-a842-01221531c363/deploy-status)](https://app.netlify.com/sites/teach-react-wp-headless/deploys)
+
 `npm i`
 `npm start`
 
