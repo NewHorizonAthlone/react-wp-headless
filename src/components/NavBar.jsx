@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./navbar.css";
 import gitLogo from "./GitHub-Mark-Light-32px.png";
 import Button from "@mui/material/Button";
+import { Link } from 'react-router-dom'
 
 export default function NavBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -41,7 +42,7 @@ export default function NavBar() {
         >
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <a href="/about">About</a>
