@@ -10,7 +10,7 @@ export default function NavBar() {
     <>
       <nav className="navigation">
         <a
-          href="https://github.com/theWhiteFox/simple-recipe-react-app"
+          href="https://github.com/NewHorizonAthlone/react-wp-headless"
           className="brand-name"
         >
           <img src={gitLogo} alt="github" />

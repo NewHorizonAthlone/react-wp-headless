@@ -4,6 +4,7 @@ Building a Headless CMS to help get developers up and running with React Redux a
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f05d9c48-6287-4c27-a842-01221531c363/deploy-status)](https://app.netlify.com/sites/teach-react-wp-headless/deploys)
 
 `npm i`
+
 `npm start`
 
 What we will be using:
@@ -24,6 +25,7 @@ What we will be using:
 - [Dave Ceddia JavaScript references](https://daveceddia.com/javascript-references/)
 - [Atende sign group array map filter and reduce JS](https://atendesigngroup.com/articles/array-map-filter-and-reduce-js)
 
-### React
+### React Redux
 - [React Router v6 getting started](https://reactrouter.com/docs/en/v6/getting-started/overview
 = [Dave Ceddia react redux immutability guide](https://daveceddia.com/react-redux-immutability-guide/)
+- [Redux Tutorials part 1 overview concepts](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
