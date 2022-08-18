@@ -17,7 +17,7 @@ What we will be using:
 
 ### Web Dev General
 - [HTML & CSS](https://internetingishard.com/).
-- [ES6 syntax and features](https://www.taniarascia.com/es6-syntax-and-feature-overview/)
+- [Tania Rascia ES6 syntax and features](https://www.taniarascia.com/es6-syntax-and-feature-overview/)
 - [array and object spread operators](https://javascript.info/rest-parameters-spread#spread-syntax)
 - [asynchronous JavaScript](https://javascript.info/promise-basics) and making [AJAX requests](https://javascript.info/fetch)
 - [RESTful API http status codes](https://restfulapi.net/http-status-codes/)
@@ -30,3 +30,4 @@ What we will be using:
 - [Dave Ceddia react redux immutability guide](https://daveceddia.com/react-redux-immutability-guide/)
 - [Redux Tuts](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
 - [https://tkdodo.eu/blog/practical-react-query](https://tkdodo.eu/blog/practical-react-query)
+- [GitHub redux-essentials-example-app](https://github.com/reduxjs/redux-essentials-example-app)
