@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { client } from "../../api/client";
 
 const initialState = {
   posts: [],
@@ -8,9 +7,7 @@ const initialState = {
 };
 
 export const fetchPosts = createAsyncThunk("posts/fetchPosts", async () => {
-  const response = await client.get("/fakeApi/posts");
-  console.log('Hi!')
-  return response.data;
+  return await fetch('https://newhorizonathlone.ngo/wp-json/wp/v2/posts').then(res => res.json());
 });
 
 const postsSlice = createSlice({
