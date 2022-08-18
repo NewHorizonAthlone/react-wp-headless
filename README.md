@@ -28,5 +28,5 @@ What we will be using:
 ### React Redux
 - [React Router v6 getting started](https://reactrouter.com/docs/en/v6/getting-started/overview)
 - [Dave Ceddia react redux immutability guide](https://daveceddia.com/react-redux-immutability-guide/)
-- [Redux Tutorials part 1 overview concepts](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
+- [Redux Tuts](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
 - [https://tkdodo.eu/blog/practical-react-query](https://tkdodo.eu/blog/practical-react-query)
