@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./navbar.css";
 import gitLogo from "./GitHub-Mark-Light-32px.png";
 import Button from "@mui/material/Button";
-import { Link } from 'react-router-dom'
 
 export default function NavBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -10,7 +9,7 @@ export default function NavBar() {
     <>
       <nav className="navigation">
         <a
-          href="https://github.com/NewHorizonAthlone/react-wp-headless"
+          href="https://github.com/theWhiteFox/simple-recipe-react-app"
           className="brand-name"
         >
           <img src={gitLogo} alt="github" />
@@ -42,7 +41,7 @@ export default function NavBar() {
         >
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <a href="/">Home</a>
             </li>
             <li>
               <a href="/about">About</a>
