@@ -7,8 +7,6 @@ export const PostsList = () => {
   const dispatch = useDispatch();
   const posts = useSelector(selectAllPosts);
 
-  console.log(posts);
-
   const postStatus = useSelector((state) => state.posts.status);
   // const error = useSelector((state) => state.posts.error);
 
@@ -18,17 +16,15 @@ export const PostsList = () => {
     }
   }, [postStatus, dispatch]);
 
-  const renderedPosts = () => {
-    return posts.map((post) => (
-      <article className="post-excerpt" key={post.id}>
-        <h3>{post.slug}</h3>
-        <p className="post-content">{post.content.substring(0, 100)}</p>
-        <Link to={`/posts/${post.id}`} className="button muted-button">
-          View Post
-        </Link>
-      </article>
-    ));
-  };
+  const renderedPosts = posts.map((post) => (
+    <article className="post-excerpt" key={post.id}>
+      <h3>{post.title}</h3>
+      <p className="post-content">{post.content.substring(0, 100)}</p>
+      <Link to={`/posts/${post.id}`} className="button muted-button">
+        View Post
+      </Link>
+    </article>
+  ));
 
   return (
     <section className="post-list">

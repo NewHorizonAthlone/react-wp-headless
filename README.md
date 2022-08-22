@@ -31,3 +31,4 @@ What we will be using:
 - [Redux Tuts](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
 - [https://tkdodo.eu/blog/practical-react-query](https://tkdodo.eu/blog/practical-react-query)
 - [GitHub redux-essentials-example-app](https://github.com/reduxjs/redux-essentials-example-app)
+- [Tania Rascia Redux React Guide/](https://www.taniarascia.com/redux-react-guide/)
