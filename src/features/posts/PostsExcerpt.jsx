@@ -5,8 +5,8 @@ import ReactionButtons from "./ReactionButtons"
 const PostsExcerpt = ({ post }) => {
   return (
     <article>
-      <h2>{post.title}</h2>
-      <p>{post.body.substring(0, 100)}</p>
+      <h2>{post.title.rendered}</h2>
+      <p>{post.content.rendered.substring(0, 100)}</p>
       <p className="postCredit">
         <PostAuthor userId={post.userId} />
         <TimeAgo timestamp={post.date} />
