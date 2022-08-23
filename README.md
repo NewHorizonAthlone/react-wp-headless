@@ -9,3 +9,4 @@ This will be my boilerplate for React projects
 
 - [Redux](https://redux.js.org/)
 - [Github Redux Devtools](https://github.com/reduxjs/redux-devtools)
+- [Writing Reducers with Immer](https://redux-toolkit.js.org/usage/immer-reducers)
