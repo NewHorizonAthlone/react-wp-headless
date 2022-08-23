@@ -3,7 +3,7 @@ import "./navbar.css";
 import gitLogo from "./GitHub-Mark-Light-32px.png";
 import Button from "@mui/material/Button";
 
-export default function NavBar() {
+export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <>
