@@ -17,10 +17,9 @@ const PostsList = () => {
 
   //
   useEffect(() => {
-    if (postsStatus === "idle") {
+    console.log('Hi!')
       dispatch(fetchPosts());
-    }
-  }, [postsStatus, dispatch]);
+  }, []);
 
   let content;
   if (postsStatus === "loading") {
