@@ -10,15 +10,10 @@ const initialState = {
   error: null,
 };
 
-export const fetchPosts = createAsyncThunk("posts/fetchPosts", async () => {
-  try {
-    console.log('fetch post thunk')
-    const res = await axios.get(POSTS_URL);
-    return [...res.data];
-  } catch (e) {
-    return e.message;
-  }
-});
+export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
+  const response = await axios.get(POSTS_URL)
+  return response.data
+})
 
 const postsSlice = createSlice({
   name: "posts",
@@ -75,6 +70,8 @@ const postsSlice = createSlice({
           };
           return post;
         });
+
+        // add any fetched posts to posts array
         state.posts = state.posts.concat(loadedPosts);
       })
       .addCase(fetchPosts.rejected, (state, action) => {
