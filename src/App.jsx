@@ -5,7 +5,6 @@ function App() {
   return (
     <>
       <main className="App">
-        <AddPostForm />
         <PostsList />
       </main>
     </>
