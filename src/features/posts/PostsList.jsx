@@ -6,11 +6,7 @@ import {
   getPostsError,
   fetchPosts,
 } from "./postsSlice";
-// import PostsExcerpt from "./PostsExcerpt";
-
-import PostAuthor from "./PostAuthor";
-import TimeAgo from "./TimeAgo";
-import ReactionButtons from "./ReactionButtons";
+import PostsExcerpt from "./PostsExcerpt";
 
 const PostsList = () => {
   const dispatch = useDispatch();
@@ -21,26 +17,15 @@ const PostsList = () => {
 
   //
   useEffect(() => {
-    dispatch(fetchPosts());
+      dispatch(fetchPosts());
   }, []);
 
   let content;
   if (postsStatus === "loading") {
     content = <p>"loading...</p>;
   } else if (postsStatus === "succeeded") {
-    const orderedPosts = posts
-      .slice()
-      .sort((a, b) => b.date.localeCompare(a.date));
-    content = orderedPosts.map((post, i) => (
-      <article key={i}>
-        <h2>{post.title.rendered}</h2>
-        <p>{post.content.rendered.substring(0, 100)}</p>
-        <p className="postCredit">
-          <PostAuthor userId={post.userId} />
-          <TimeAgo timestamp={post.date} />
-        </p>
-        <ReactionButtons post={post} />
-      </article>
+    content = posts.map((post) => (
+      <PostsExcerpt key={post.id} post={post} />
     ));
   } else if (postsStatus === "failed") {
     content = <p>{error}</p>;
@@ -49,18 +34,7 @@ const PostsList = () => {
   return (
     <section className="posts-list">
       <h2>Posts</h2>
-      {posts.map((post, i) => (
-        <article key={i}>
-          <h2>{post.title.rendered}</h2>
-          <p>{post.content.rendered.substring(0, 100)}</p>
-          <p className="postCredit">
-            <PostAuthor userId={post.userId} />
-            <TimeAgo timestamp={post.date} />
-          </p>
-          <ReactionButtons post={post} />
-        </article>
-      ))}
-      ;
+      {content}
     </section>
   );
 };
