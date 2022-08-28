@@ -9,6 +9,9 @@ const Header = () => {
           <li>
             <Link to="/">Home</Link>
           </li>
+          <li>
+            <a href="https://github.com/NewHorizonAthlone/react-wp-headless">GitHub</a>
+          </li>
         </ul>
       </nav>
     </header>
