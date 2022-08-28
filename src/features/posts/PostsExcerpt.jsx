@@ -2,7 +2,7 @@ import PostAuthor from "./PostAuthor";
 import TimeAgo from "./TimeAgo";
 import ReactionButtons from "./ReactionButtons";
 import parse from "html-react-parser";
-import { format, parseISO, formatDistanceToNow } from "date-fns";
+import { format } from "date-fns";
 
 const PostsExcerpt = ({ post }) => {
   return (
