@@ -2,7 +2,7 @@ import { createSlice, nanoid, createAsyncThunk } from "@reduxjs/toolkit";
 import { sub } from "date-fns";
 import axios from "axios";
 
-const POSTS_URL = "https://newhorizonathlone.ngo/wp-json/wp/v2/posts";
+const POSTS_URL = "https://newhorizonathlone.ngo/wp-json/wp/v2/posts?_embed=true";
 
 const initialState = {
   posts: [],
