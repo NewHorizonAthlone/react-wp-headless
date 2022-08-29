@@ -3,7 +3,6 @@ import {
   selectAllPosts,
   getPostsStatus,
   getPostsError,
-  fetchPosts,
 } from "./postsSlice";
 import PostsExcerpt from "./PostsExcerpt";
 
