@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import {
   selectAllPosts,
   getPostsStatus,
@@ -9,16 +8,9 @@ import {
 import PostsExcerpt from "./PostsExcerpt";
 
 const PostsList = () => {
-  const dispatch = useDispatch();
-
   const posts = useSelector(selectAllPosts);
   const postsStatus = useSelector(getPostsStatus);
   const error = useSelector(getPostsError);
-
-  //
-  useEffect(() => {
-      dispatch(fetchPosts());
-  }, []);
 
   let content;
   if (postsStatus === "loading") {
