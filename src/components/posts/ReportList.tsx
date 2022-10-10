@@ -56,7 +56,7 @@ const ReportList = () => {
             ) : data ? (
                 <Grid container spacing={{ xs: 2, md: 3 }} rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                     {data.map((post) => (
-                        <Grid item xs={12} md={3}>
+                        <Grid key={post.id} item xs={12} md={3}>
                             <Link to={`post/${post.id}`}>
                                 <Item>
                                     <h2>{parse(post.title.rendered)}</h2>
