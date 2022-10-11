@@ -15,6 +15,7 @@ const SinglePost = () => {
     const { postId } = useParams();
 
     const { data: post,
+        // @ts-ignore
         isLoading, } = useGetPostByNameQuery(postId!, {
             pollingInterval: 3000,
             refetchOnMountOrArgChange: true,
