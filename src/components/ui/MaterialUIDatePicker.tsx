@@ -30,7 +30,7 @@ export default function MaterialUIPicker() {
                     maxDate={dayjs('2023-06-01')}
                     value={value}
                     onChange={handleChange}
-                    renderInput={(params) => <TextField sx={{ pl: 1, width: 200 }} size="small" {...params} />}
+                    renderInput={(params) => <TextField sx={{ pl: 1, width: 180 }} size="small" {...params} />}
                 />
             </Stack>
         </LocalizationProvider>
