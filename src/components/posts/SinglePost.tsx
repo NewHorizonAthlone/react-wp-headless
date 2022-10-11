@@ -19,7 +19,7 @@ const SinglePost = () => {
     const { postId } = useParams<keyof RouteParams>() as RouteParams;
 
     const { data: post,
-        isLoading, } = useGetPostByNameQuery(postId, {
+        isLoading, } = useGetPostByNameQuery(postId!, {
             pollingInterval: 3000,
             refetchOnMountOrArgChange: true,
             skip: false,
