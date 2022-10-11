@@ -10,13 +10,9 @@ import {
     Typography,
 } from "@mui/material";
 
-type RouteParams = {
-    postId: string
-}
-
 const SinglePost = () => {
     // retrieve postId
-    const { postId } = useParams<keyof RouteParams>() as RouteParams;
+    const { postId } = useParams();
 
     const { data: post,
         isLoading, } = useGetPostByNameQuery(postId!, {
