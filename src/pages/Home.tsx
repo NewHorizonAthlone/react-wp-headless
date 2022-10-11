@@ -13,8 +13,8 @@ function Home() {
 
   return (
     <>
-      <Typography color="primary.dark" variant="h4">
-        News
+      <Typography color="primary.dark" variant="h1">
+        news
       </Typography>
       <div className="App">
         {error ? (

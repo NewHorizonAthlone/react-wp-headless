@@ -11,11 +11,16 @@ export function App() {
 
   // define theme
   const theme = createTheme({
+    typography: {
+      // In Chinese and Japanese the characters are usually larger,
+      // so a smaller fontsize may be appropriate.
+      fontSize: 12,
+    },
     palette: {
       primary: {
         main: "#ec8f33",
         light: "#82e9de",
-        dark: "#00867d",
+        dark: "#c97624",
         contrastText: "#000",
       },
       secondary: {
