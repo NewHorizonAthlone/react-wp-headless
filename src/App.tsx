@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { routes as appRoutes } from "./routes";
 import Navbar from "./components/ui/Navbar";
 import Footer from "./components/ui/Footer";
+import NotFound from "../src/pages/NotFound";
+import SinglePost from "./components/posts/SinglePost";
 
 export function App() {
 
@@ -45,6 +47,8 @@ export function App() {
                   element={<route.component />}
                 />
               ))}
+              <Route path="post/:postId" element={<SinglePost />}></Route>
+              <Route path="*" element={<NotFound />}></Route>
             </Routes>
           </Paper>
           <Footer />

@@ -22,7 +22,7 @@ export interface IRoute {
 }
 
 export interface IPost {
-    id: number,
+    id?: number,
     date: string,
     date_gmt: Date,
     guid: object,

@@ -1,14 +1,12 @@
-import { cloneElement, ReactElement, useState } from 'react'
+import { cloneElement, ReactElement, useRef, useState } from 'react'
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
+import FormGroup from '@mui/material/FormGroup'
 import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
-import { useGetPostListQuery, useGetPostByNameQuery } from '../../services/posts'
+import { useGetPostListQuery } from '../../services/posts'
 import { FormControl, InputLabel, MenuItem, Paper, Select, SelectChangeEvent } from '@mui/material';
-import MaterialUIPicker from '../ui/MaterialUIPicker'
+import MaterialUIDatePicker from '../ui/MaterialUIDatePicker'
 import parse from "html-react-parser";
 import { format } from "date-fns";
 import TimeAgo from './TimeAgo'
@@ -22,14 +20,28 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const ReportList = () => {
+    const { data, error, isLoading } = useGetPostListQuery()
+    const posts = data?.slice()
     const [postTitle, setPostTitle] = useState('');
-
+    const [sortPosts, setSortPosts] = useState(posts);
     const handleChange = (event: SelectChangeEvent) => {
         setPostTitle(event.target.value as string);
     };
-    const [secondary, setSecondary] = useState(false);
 
-    const { data, error, isLoading } = useGetPostListQuery()
+    function sortPostsClickAsc() {
+        const sorted = posts?.sort((a: any, b: any) => (a.slug > b.slug) ? 1 : -1);
+        setSortPosts(sorted)
+    }
+
+    function sortPostsClickDsc() {
+        const sorted = posts?.sort((a: any, b: any) => (a.slug > b.slug) ? 1 : -1).reverse();
+        setSortPosts(sorted)
+    }
+
+    function sortPostsClickDate() {
+        const sorted = posts?.sort((a: any, b: any) => (a.date > b.date) ? 1 : -1);
+        setSortPosts(sorted)
+    }
 
     return (
         <Box sx={{ p: 2, flexGrow: 1, maxWidth: 1280 }}>
@@ -43,31 +55,33 @@ const ReportList = () => {
                         label="Title"
                         onChange={handleChange}
                     >
-                        <MenuItem value={20}>Ascending</MenuItem>
-                        <MenuItem value={30}>Descending</MenuItem>
+                        <MenuItem onClick={sortPostsClickAsc} value={20}>Ascending</MenuItem>
+                        <MenuItem onClick={sortPostsClickDsc} value={30}>Descending</MenuItem>
                     </Select>
                 </FormControl>
-                <MaterialUIPicker />
+                <MaterialUIDatePicker />
             </FormGroup>
-            {error ? (
-                <>Oh no, there was an error</>
-            ) : isLoading ? (
-                <>Loading...</>
-            ) : data ? (
-                <Grid container spacing={{ xs: 2, md: 3 }} rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                    {data.map((post) => (
-                        <Grid key={post.id} item xs={12} md={3}>
-                            <Link to={`post/${post.id}`}>
-                                <Item>
-                                    <h2>{parse(post.title.rendered)}</h2>
-                                    <TimeAgo timestamp={format(new Date(post.date), "yyyy-MM-dd")} />
-                                </Item>
-                            </Link>
-                        </Grid>
-                    ))}
-                </Grid>
-            ) : null}
-        </Box>
+            {
+                error ? (
+                    <>Oh no, there was an error</>
+                ) : isLoading ? (
+                    <>Loading...</>
+                ) : sortPosts ? (
+                    <Grid container spacing={{ xs: 2, md: 3 }} rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                        {sortPosts.map((post) => (
+                            <Grid key={post.id} item xs={12} md={4}>
+                                <Link to={`post/${post.id}`}>
+                                    <Item style={{ height: '100%' }}>
+                                        <h2>{parse(post.title.rendered)}</h2>
+                                        <TimeAgo timestamp={format(new Date(post.date), "yyyy-MM-dd")} />
+                                    </Item>
+                                </Link>
+                            </Grid>
+                        ))}
+                    </Grid>
+                ) : null
+            }
+        </Box >
     );
 }
 

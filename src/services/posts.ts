@@ -8,7 +8,7 @@ type PostsResponse = IPost[]
 export const postApi = createApi({
     reducerPath: 'postApi',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'https://newhorizonathlone.org/wp-json/wp/v2/'
+        baseUrl: 'https://newhorizonathlone.ngo/wp-json/wp/v2/'
     }),
     tagTypes: ['Posts'],
     endpoints: (builder) => ({
@@ -22,8 +22,8 @@ export const postApi = createApi({
                     ]
                     : [{ type: 'Posts', id: 'LIST' }],
         }),
-        getPostByName: builder.query<IPost, string>({
-            query: (id) => `posts/${id}`
+        getPostByName: builder.query<IPost, number>({
+            query: (id: number) => `posts/${id}`
         }),
     }),
 })

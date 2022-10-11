@@ -1,9 +1,7 @@
 import parse from "html-react-parser";
 import { format } from "date-fns";
-
 import PostAuthor from "./PostAuthor";
 import TimeAgo from "./TimeAgo";
-
 import { Link } from "react-router-dom";
 import { IPost } from '../../interfaces'
 

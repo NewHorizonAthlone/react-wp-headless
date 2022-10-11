@@ -3,8 +3,6 @@
 // pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-import NotFound from "./pages/NotFound";
-
 import { IRoute } from './interfaces'
 
 export const routes: Array<IRoute> = [
@@ -22,11 +20,4 @@ export const routes: Array<IRoute> = [
         enabled: true,
         component: About
     },
-    {
-        key: 'not-found-route',
-        title: '',
-        path: '*',
-        enabled: false,
-        component: NotFound
-    }
 ]
