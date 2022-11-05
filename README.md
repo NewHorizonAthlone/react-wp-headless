@@ -1,6 +1,8 @@
-## [Vite](https://vitejs.dev/) + [React](https://reactjs.org/) + [Redux](https://redux.js.org/) + [TS](https://www.typescriptlang.org/) React Native App
+## [Vite](https://vitejs.dev/) + [React](https://reactjs.org/) + [Redux](https://redux.js.org/) + [TS](https://www.typescriptlang.org/) Stateless App
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f05d9c48-6287-4c27-a842-01221531c363/deploy-status)](https://app.netlify.com/sites/teach-react-wp-headless/deploys)
+`yarn`
+
+`yarn dev`
 
 This setup includes:
 * [Vite](https://vitejs.dev/)
